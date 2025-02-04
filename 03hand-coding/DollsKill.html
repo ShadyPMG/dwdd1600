@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsiaFashionInfo</title>
+    <meta name="description" content="An online fashion website featuring alternative, mixed with punk rock, goth, glam and much more. Discover useful and fashionable clothing styles and how to style them. Extra 20% Off your first purchase. Next-level Quality & style, So Many Options. Tops, Bottoms, Shoes, and more.">
+    <meta name="Author" content="Shadany Mendoza">
+    
+    <style>
+        /* Ensure body takes up the full height of the screen */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation bar at the top */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #48bd3e;
+            padding: 10px;
+            box-shadow: 0 4px 2px -2px rgb(23, 83, 11);
+        }
+
+        .navbar a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #1c5c13;
+        }
+
+        /* Main content section takes up available space */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+            flex-direction: column;
+            padding: 20px;
+        }
+
+         /* Footer styling */
+         footer {
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center;
+            align-items: center;
+            background-color: #48bd3e;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        /* Style for address and phone link */
+        .footer-address, .footer-phone {
+            font-size: 14px;
+        }
+
+        .footer-address a, .footer-phone a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer-address a:hover, .footer-phone a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-phone {
+            margin-top: 10px; /* Space between address and phone */
+        }
+
+        /* Style for each item block */
+        .item {      
+            text-align: center;
+            width: 500px; /* Set a fixed width */
+            border: 2px solid #000000;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .item h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .item p {
+            font-style: italic;
+            margin: 0;
+        }
+
+        /* Style the Shop Now section */
+        .shop-now {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .shop-now a {
+            font-weight: bold;
+            font-size: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #000000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid #9df4f7;
+        }
+
+        .shop-now a:hover {
+            background-color: #ffffff;
+            color: rgb(118, 201, 207);
+        }
+
+        .shop-now p {
+            font-size: 16px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="YRU.html">YRU</a>
+        <a href="KILLSTAR.html">KILLSTAR</a>
+    </div>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Dolls Kill Site -->
+        <div class="item">
+            <br>
+            <h2><span style="color: rgb(0, 0, 0); font-weight: bold;">DOLLS KILL</span></h2>
+            <br>
+            <br>
+            <img src="Dolls Kill.JPG" alt="Dollskill">
+            
+            <!-- Shop Now Section -->
+            <div class="shop-now">
+            <br>
+                <a href="https://www.dollskill.com/" target="_blank">SHOP NOW</a>
+            <br>
+            <br>
+            <br>
+            <br>
+                <p>Fast shipping in the US and internationally on our bold and unique fashion clothing, shoes, and accessories.</p>
+            </div>
+        </div>
+    </main>
+
+     <!-- Footer -->
+     <footer>
+        <div class="footer-name">
+            <p>&copy; Shadany Mendoza &bull; 2025</p>
+        </div>
+        
+        <!-- Address -->
+        <div class="footer-address">
+            <address>
+                123 Fashion St, Suite 456, Los Angeles, CA 90001, USA
+            </address>
+        </div>
+
+        <!-- Phone number -->
+        <div class="footer-phone">
+            <a href="tel:+18005551234">Call us: (800) 555-1234</a>
+        </div>
+    </footer>
+
+</body>
+</html>
