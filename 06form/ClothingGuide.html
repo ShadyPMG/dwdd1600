@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META DATA: General information about the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsianFashionInfo</title>
+    <meta name="description" content="An online fashion website featuring alternative, punk rock, goth, glam, and more. Explore unique clothing styles and how to wear them.">
+    <meta name="Author" content="Shadany Mendoza">
+      
+    <!-- Link to external stylesheets and fonts -->
+    <link rel="stylesheet" href="Guide.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <style>
+        fieldset {
+            border: 2px solid #bf73e2;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        legend {
+            font-weight: bold;
+            color:#bf73e2;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER SECTION: Contains the website title and navigation menu -->
+    <header>
+        <h1><span>AsiaFashion Info</span></h1>
+
+        <nav>
+            <ul>
+                <li class="menu-item" data-title="Home"><a href="index.html">Home</a></li>
+                <li class="menu-item" data-title="About"><a href="about.html">About</a></li>
+                <li class="active"><a href="Outfits.html">Outfits</a></li> 
+                <li class="active" data-title="Clothing Guide"><a href="ClothingGuide.html">Clothing Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Dress According to Your Body Type</h1>
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Viewer's Information</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+                
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+                
+                <label for="tel">Cell Number:</label>
+                <input type="tel" id="tel" name="tel" required placeholder="123-456-7890">
+            </fieldset>
+
+            <fieldset>
+                <legend>Notification Method</legend>
+                <label for="text-notification"><input type="checkbox" id="text-notification" name="notification" value="text">Text</label>
+                <label for="email-notification"><input type="checkbox" id="email-notification" name="notification" value="email">Email</label>
+                <label for="call-notification"><input type="checkbox" id="call-notification" name="notification" value="call">Call</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Body Information</legend>
+                <label for="inverted-triangle"><input type="radio" id="inverted-triangle" name="body-type" value="inverted triangle">Inverted Triangle</label>
+                <label for="pear"><input type="radio" id="pear" name="body-type" value="pear">Pear</label>
+                <label for="hourglass"><input type="radio" id="hourglass" name="body-type" value="hourglass">Hourglass</label>
+                <label for="apple"><input type="radio" id="apple" name="body-type" value="apple">Apple</label>
+                <label for="rectangle"><input type="radio" id="rectangle" name="body-type" value="rectangle">Rectangle</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skin Information</legend>
+                <label for="fair"><input type="radio" id="fair" name="skin-tone" value="fair">Fair</label>
+                <label for="light"><input type="radio" id="light" name="skin-tone" value="light">Light</label>
+                <label for="beige"><input type="radio" id="beige" name="skin-tone" value="beige">Beige</label>
+                <label for="golden"><input type="radio" id="golden" name="skin-tone" value="golden">Golden</label>
+                <label for="brown"><input type="radio" id="brown" name="skin-tone" value="brown">Brown</label>
+                <label for="tan"><input type="radio" id="tan" name="skin-tone" value="tan">Tan</label>
+                <label for="dark-brown"><input type="radio" id="dark-brown" name="skin-tone" value="dark brown">Dark Brown</label>
+                <label for="deep"><input type="radio" id="deep" name="skin-tone" value="deep">Deep</label>
+                <label for="ebony"><input type="radio" id="ebony" name="skin-tone" value="ebony">Ebony</label>
+                <label for="black"><input type="radio" id="black" name="skin-tone" value="black">Black</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Face Information</legend>
+                <label for="oval"><input type="radio" id="oval" name="face-shape" value="oval">Oval</label>
+                <label for="square"><input type="radio" id="square" name="face-shape" value="square">Square</label>
+                <label for="long"><input type="radio" id="long" name="face-shape" value="long">Long</label>
+                <label for="diamond"><input type="radio" id="diamond" name="face-shape" value="diamond">Diamond</label>
+                <label for="upside-down-triangle"><input type="radio" id="upside-down-triangle" name="face-shape" value="upside-down triangle">Upside-down Triangle</label>
+                <label for="round"><input type="radio" id="round" name="face-shape" value="round">Round</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </fieldset>
+
+            <button type="submit">Send Information</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shadany Mendoza &bull; All Rights Reserved</p>
+    </footer>
+</body>
+</html>
