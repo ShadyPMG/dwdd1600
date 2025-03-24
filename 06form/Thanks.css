@@ -1,0 +1,88 @@
+.lilita-light {
+    font-family: "Lilita One", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lilita-one-regular {
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lilita-bold {
+    font-family: "Lilita One", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body, header, main, footer {
+    font-family: "Lilita One", serif;
+}
+
+
+header {
+    box-sizing: border-box; /* Ensures padding/borders are included in width/height */
+    width: 100%; /* Ensure it occupies full width of the viewport */
+    padding: 1rem;
+    font-size: x-large;
+}
+
+
+header span {
+    font-size: 1.25rem; /* Set a default font size */
+}
+
+/* General header styling */
+header {
+    background-color: #edd5f8;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header text styling */
+header span {
+    font-size: 1.25rem; /* Default font size */
+    
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Set up the main container (if any) to take full height */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    color: #000000;
+    padding: 1rem 2vw;
+    margin-left: 0 auto; /* Center the element horizontally */
+}
+
+/* Footer style */
+footer {
+    background-color: #edd5f8;
+    text-align: center;
+    color: #66367c;
+    padding: 1rem;
+    font-size: .8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: auto;  /* Push the footer to the bottom */
+    box-sizing: border-box; /* Ensures padding/borders are included in width/height */
+    width: 100%; /* Ensure it occupies full width of the viewport */
+    justify-content: center;
+    display: flex;
+     /* Footer section styling */
+}

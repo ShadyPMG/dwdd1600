@@ -1,0 +1,209 @@
+.lilita-light {
+    font-family: "Lilita One", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lilita-one-regular {
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lilita-bold {
+    font-family: "Lilita One", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body, header, main, footer {
+    font-family: "Lilita One", serif;
+}
+
+body{
+    font-family: "Lilita One", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* This is a multi-line comment
+   explaining the styles for the header */
+
+header {
+    color:#66367c;
+    background-color:#edd5f8;
+    padding: 1rem 2vw;
+    text-align:center;
+    font-size: x-large;
+}
+
+/*nav section styling */
+
+header span {
+    margin: 0;
+    color:#bf73e2;
+    letter-spacing: .5px;
+    padding:0 0.10;
+}
+
+
+@media only screen and (max-width: 700px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+    header span {
+        font-size: 1rem;
+    }
+    .menu li {
+        margin-right: 10px;
+    }
+    nav .active a {
+        background-color: #66367c;
+        background-image: linear-gradient(to bottom, #edd5f8, #bf73e2);
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    header {
+        padding: 0.25rem;
+    }
+    header span {
+        font-size: 1rem;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align:center;
+    color:#bf73e2; 
+    text-transform: uppercase;
+}
+
+
+Nav a:hover {
+    color:#66367c
+}
+main {
+    color:#000000;
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #000000;
+    letter-spacing: 2px;
+}
+
+main h2 {
+    color: #66367c;
+    margin-bottom: .2rem;
+    font-size: x-large;
+}
+
+main p {
+    color: #000000;
+}
+
+main p a {
+    color: #66367c;
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #edd5f8;
+}
+
+main dl dt {
+    color: #bf73e2;
+    font-weight: 400;
+}
+
+main dl dd {
+    color: #000000;
+    font-size: .9rem;
+    margin-left: 10px;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.women img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    image-rendering: crisp-edges;
+}
+
+main ul li {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color:#edd5f8;
+    width: 12rem;
+    padding: .5rem;
+    border: 3px solid #bf73e2;
+    border-radius: .5rem;
+}
+
+main a:hover {
+    color:#bf73e2
+}
+
+figure.wrapped {
+  width: 25%;
+  margin: 0 0 0 60%;
+  float: right;
+}
+
+figure.wrapped img {
+  width: 100%;
+  height: auto;
+}
+
+figure.wrapped figcaption {
+  text-align: center;
+  font-size: .75rem;
+}
+
+ /* Footer section styling */
+  
+ footer {
+    background-color:#edd5f8;
+    text-align: center;
+    color:#66367c;
+    padding: 1rem;
+    font-size: .8rem;
+}
