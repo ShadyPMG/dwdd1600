@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META DATA: General information about the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Guide</title>
+    <meta name="description" content="An online fashion website featuring alternative, punk rock, goth, glam, and more. Explore unique clothing styles and how to wear them.">
+    <meta name="Author" content="Shadany Mendoza">
+      
+    <!-- Link to external stylesheets and fonts -->
+    <link rel="stylesheet" href="Guide.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER SECTION: Contains the website title and navigation menu -->
+    <header>
+        <h1><span>Clothing Guide</span></h1>
+
+        <nav>
+            <ul>
+                <li class="menu-item" data-title="Home"><a href="index.html">Home</a></li>
+                <li class="menu-item" data-title="About"><a href="about.html">About</a></li>
+                <li class="active"><a href="Outfits.html">Outfits</a></li> 
+                <li class="active" data-title="Clothing Guide"><a href="ClothingGuide.html">Clothing Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Dress According to Your Body Type</h1>
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Viewer's Information</legend>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required>
+                <label for="tel">Cell Number</label>
+                <input type="tel" id="tel" name="tel" required placeholder="123-456-7890">
+            </fieldset>
+
+            <fieldset>
+                <legend>Notification Method</legend>
+                <label for="text"><input type="checkbox" id="text" name="notification" value="text">Text</label>
+                <label for="email"><input type="checkbox" id="email" name="notification" value="email">Email</label>
+                <label for="call"><input type="checkbox" id="call" name="notification" value="call">Call</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Body Information</legend>
+                <label type="radio" id="inverted_triangle" name="body_type" value="inverted_triangle">Inverted Triangle</label>
+                <label type="radio" id="pear" name="body_type" value="pear">Pear</label>
+                <label type="radio" id="hourglass" name="body_type" value="hourglass">Hourglass</label>
+                <label type="radio" id="apple" name="body_type" value="apple">Apple</label>
+                <label type="radio" id="rectangle" name="body_type" value="rectangle">Rectangle</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skin Information</legend>
+                <label for="skin-color">Choose your skin color:</label>
+                <select id="skin-color" name="skin-color">
+                    <option value="fair">Fair</option>
+                    <option value="light">Light</option>
+                    <option value="beige">Beige</option>
+                    <option value="golden">Golden</option>
+                    <option value="brown">Brown</option>
+                    <option value="tan">Tan</option>
+                    <option value="dark_brown">Dark Brown</option>
+                    <option value="deep">Deep</option>
+                    <option value="ebony">Ebony</option>
+                    <option value="black">Black</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Face Information</legend>
+                <label type="radio" id="oval" name="face_type" value="oval">Oval</label>
+                <label type="radio" id="square" name="face_type" value="square">Square</label>
+                <label type="radio" id="long" name="face_type" value="long">Long</label>
+                <label type="radio" id="diamond" name="face_type" value="diamond">Diamond</label>
+                <label type="radio" id="upside_down_triangle" name="face_type" value="upside_down_triangle">Upside Down Triangle</label>
+                <label type="radio" id="round" name="face_type" value="round">Round</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comments</legend>
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Send Information">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shadany Mendoza &bull; All Rights Reserved</p>
+    </footer>
+</body>
+</html>
