@@ -1,0 +1,283 @@
+.lilita-light {
+    font-family: "Lilita One", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lilita-one-regular {
+  
+      font-family: "Lilita One", serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+  
+  .lilita-bold {
+  
+  font-family: "Lilita One", serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+  
+  body{
+      font-family: "Lilita One", serif;
+      font-weight: 300;
+      font-style: normal;
+  }
+  * {box-sizing: border-box;} 
+
+  body{
+      font-family: "Lilita One", serif;
+      font-weight: 300;
+      font-style: normal;
+  }
+
+
+/* This is a multi-line comment explaining the styles for the header */
+header div {
+  padding-left: 1vw;
+}
+
+/* Make sure the header uses space-between to separate title and nav */
+header {
+  padding: 1px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* This moves the title to the left and keeps the nav centered */
+  color: #66367c;
+  background-color: #edd5f8;
+}
+
+/* Title styling for "Wardrobe" */
+header span {
+  margin: 0;
+  color: #66367c;
+  letter-spacing: .5px;
+  padding: 0 0.10;
+  font-size: 30px; /* Adjust this as needed */
+}
+
+/* Navigation styling for centered links */
+header nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;  /* Ensures the nav takes up available space */
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 2vw;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px #ffffff;
+  color: #bf73e2;
+}
+
+header nav a {
+  display: flex;
+  padding: .8rem;
+  text-decoration: none;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  margin-block: auto;
+}
+
+/* SMALL screens */
+@media only screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    border-bottom: solid 1px #ffffff;
+    color: #bf73e2;
+  }
+
+  nav a {
+    display: flex;
+    padding: .8rem;
+    text-decoration: none;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: auto;
+  }
+
+  header {
+    padding: 1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: left; /* Keep "Wardrobe" on the left and nav centered */
+    color: #66367c;
+    background-color: #edd5f8;
+  }
+
+  header nav {
+    padding: 1px 1px 1px;
+    display: flex;
+    justify-content: center;
+  }
+
+  header span {
+    font-size: 30px;
+  }
+
+  .menu li {
+    margin-right: 10px;
+  }
+
+  nav .active a {
+    padding: 21px;
+    background-color: #66367c;
+    background-image: linear-gradient(to bottom, #edd5f8, #bf73e2);
+    color: white;
+  }
+}
+
+/* BIG Screens */
+@media only screen and (min-width: 701px) {
+  nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    color: #bf73e2;
+    text-transform: uppercase;
+  }
+
+  nav a:hover {
+    color: #66367c;
+  }
+
+  header {
+    padding: 0.25rem;
+    display: flex;
+    color: #66367c;
+    background-color: #edd5f8;
+    align-items: center;
+    justify-content: left; /* Keep "Wardrobe" on the left and nav centered */
+  }
+
+  header span {
+    font-size: auto;
+  }
+}
+
+/* Main section styling */
+
+main {
+    color:#000000;
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color:#000000;
+    letter-spacing: 2px;
+}
+
+main h2 {
+    color:#66367c;
+    margin-bottom: .2rem;
+    font-size: x-large;
+}
+
+main p {
+    color:#000000
+}
+
+
+main p a {
+    color:#66367c
+  }
+
+main ol {
+    padding: .5rem 30px;
+    background-color:#edd5f8
+}
+
+main dl dt {
+    color:#bf73e2;
+    font-weight: 400;
+}
+
+main dl dd {
+    color:#000000;
+    font-size: .9rem;
+    margin-left: 10px;
+}
+
+main ul {
+    list-style-type: lower;
+}
+
+/* Apply Flexbox to the menu container */
+.menu {
+    display: flex;  /* Enables Flexbox */
+    list-style-type: none;  /* Removes the default list styling */
+    padding: 0;  /* Removes the default padding */
+    margin: 0;  /* Removes the default margin */
+  }
+  
+  /* Optional: Style the menu items */
+  .menu li {
+    margin-right: 20px;  /* Adds space between the menu items */
+    height: 48px;
+  }
+  
+  .menu a {
+    text-decoration: none;  /* Removes underline from links */
+    color: black;  /* Sets text color */
+  }
+  
+  main ul {
+      list-style-type: lower;
+      margin: 0; /* Remove margin */
+      padding: 0; /* Remove padding */
+  }
+  
+  main ul li {
+      line-height: 150%;
+      margin-bottom: 1rem; /* Adjust margin-bottom to a smaller value */
+      font-size: .9rem;
+  }  
+
+main address {
+    font-style: normal;
+    background-color:#edd5f8;
+    width: 12rem;
+    padding: .5rem;
+    border: 3px solid #bf73e2;
+    border-radius: .5rem;
+}
+
+main a:hover {
+    color:#bf73e2
+}
+
+  
+  /* Footer section styling */
+  
+  footer {
+      background-color:#edd5f8;
+      text-align: center;
+      color:#66367c;
+      padding: 1rem;
+      font-size: .8rem;
+  }
+  
+  
