@@ -1,0 +1,368 @@
+.lilita-light {
+  font-family: "Lilita One", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lilita-one-regular {
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lilita-bold {
+  font-family: "Lilita One", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body, header, main, footer {
+  font-family: "Lilita One", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensures the body takes full height */
+  margin: 0; /* Removes default margin */
+}
+
+
+body {
+  font-family: "Lilita One", serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0px 0px 5px; /* Keeps padding on the body but ensures the header spans 100% width */
+  margin: 0; /* Removes default margin to prevent any unwanted space */
+  color: #000000;
+  display: flex;
+  flex-direction: column; /* Stack the header, main, and footer vertically */
+}
+
+/* Header styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* Title left, nav centered */
+  color: #66367c;
+  background-color: #edd5f8;
+  width: 100%; /* Ensures header takes up full width */
+  position: relative; /* To ensure it's not affected by body padding */
+  padding: 0; /* Reset any additional padding */
+}
+
+/* Title styling for "Page Title" */
+header span {
+  margin: 0;
+  color: #bf73e2;
+  letter-spacing: .5px;
+  font-size: 30px; /* Adjust this as needed */
+}
+
+/* Navigation styling for centered links */
+header nav {
+  padding: 0 2vw;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;  /* Ensures the nav takes up available space */
+  color: #bf73e2;
+  width: 100%; 
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 10px 0px 0px;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px #ffffff;
+  color: #bf73e2;
+}
+
+header nav a {
+  display: flex;
+  padding: .8rem;
+  text-decoration: none;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  margin-block: auto;
+}
+
+/* SMALL screens */
+@media only screen and (max-width: 700px) {
+  header {
+    padding: 1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: left; /* Keep "Title" on left and nav centered */
+    color: #66367c;
+    background-color: #edd5f8;
+  }
+
+   nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+    flex-direction: column;  /* Stack the items vertically */
+    align-items: center;     /* Center the items */
+    border-bottom: solid 1px #ffffff;
+  }
+
+  nav a {  
+    padding: .8rem;
+    text-decoration: none;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    color: #bf73e2;
+    margin-block: auto;
+  }
+
+  header span {
+    font-size: 30px;
+  }
+
+  .menu li {
+    margin-right: 10px;
+  }
+
+  nav .active a {
+    background-color: #66367c;
+    background-image: linear-gradient(to bottom, #edd5f8, #bf73e2);
+    color: white;
+  }
+}
+
+/* BIG Screens */
+@media only screen and (min-width: 701px) {
+  nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    color: #bf73e2;
+    text-transform: uppercase;
+  }
+
+  nav a:hover {
+    color: #66367c;
+  }
+
+  header {
+    padding: 0.25rem;
+    display: flex;
+    color: #66367c;
+    background-color: #edd5f8;
+    align-items: center;
+    justify-content: left; /* Keep "Page Title" on the left and nav centered */
+  }
+
+  header span {
+    font-size: auto;
+  }
+}
+
+/* Main section styling */
+main {
+  color:#000000;
+  padding: 1rem 2vw; /* Keep the body content padded separately */
+  flex-grow: 1  /* This will allow the main section to grow and fill available space */
+}
+
+main h1 {
+  color:#000000;
+  letter-spacing: 2px;
+}
+
+main h2 {
+  color:#66367c;
+  margin-bottom: .2rem;
+  font-size: x-large;
+}
+
+main p {
+  color:#000000;
+}
+
+main p a {
+  color:#66367c;
+}
+
+main ol {
+  padding: .5rem 30px;
+  background-color:#edd5f8;
+}
+
+main dl dt {
+  color:#bf73e2;
+  font-weight: 400;
+}
+
+main dl dd {
+  color:#000000;
+  font-size: .9rem;
+  margin-left: 10px;
+}
+
+main ul {
+  list-style-type: lower;
+}
+
+/* links at the bottom */
+main a:hover {
+  color:#bf73e2
+}
+
+/* Optional: Style the menu items */
+.menu li {
+  margin-right: 20px;  /* Adds space between the menu items */
+}
+
+.menu a {
+  text-decoration: none;  /* Removes underline from links */
+  color: black;  /* Sets text color */
+}
+
+main address {
+  font-style: normal;
+  background-color:#edd5f8;
+  width: 12rem;
+  padding: .5rem;
+  border: 3px solid #bf73e2;
+  border-radius: .5rem;
+}
+
+/* Apply Flexbox to the menu container */
+.menu {
+  display: flex;  /* Enables Flexbox */
+  list-style-type: none;  /* Removes the default list styling */
+  padding: 0;  /* Removes the default padding */
+  margin: 0;  /* Removes the default margin */
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*image home page*/
+.wrapped img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  image-rendering: crisp-edges;
+}
+
+/*Outfits Page only  */
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.gallery figure {
+  margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+text-align: center;
+font-size: .8rem;
+color: #66367c;
+}
+
+div.gallery figure img:hover {
+box-shadow: 0px 0px 10px #66367c;
+}
+
+/*Clothing Guide Page only  */
+.myForm fieldset {
+  border: 1px solid #bf73e2;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  }
+  .myForm legend {
+      color: #bf73e2;
+      font-size: .8rem;
+  }
+  .myForm label {
+      margin: .5rem;
+  }
+  .myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea {
+      display: block;
+  }
+  
+  .myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea {
+  
+      border: solid 1px #888;
+      padding: .3rem;
+      width: 250px;
+      border-radius: .3rem;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-weight: 200;
+  }
+  .myForm textarea {
+      height: 6rem;
+  }
+  
+  .myForm :required {
+      background-color: rgba(156,51,53,0.1);
+  }
+  
+  .myForm [type=submit] {
+      background-color:#bf73e2;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      color: white;
+      margin: 1rem 0 0 1vw;
+  }
+
+
+/*Cosmetics Event Page only  */
+table.beauty-events {
+  width:100%;
+  border-collapse: collapse;
+  }
+  
+  table.beauty-events th {
+  background-color: #bf73e2;
+  color: white;
+  padding: .5rem 2vw;
+  text-align: left;
+  }
+  
+  table.beauty-events td {
+  padding: .4rem 2vw;
+  }
+  
+  table.beauty-events tr:nth-child(odd) {
+  background-color: #edd5f8;
+  }
+  
+  table.beauty-events tr:hover {
+  color:white;
+  background-color: #66367c;
+  }
+
+footer {
+  background-color:#edd5f8;
+  text-align: center;
+  color:#66367c;
+  padding: 1rem;
+  font-size: .8rem;
+  margin-top: auto;
+}
