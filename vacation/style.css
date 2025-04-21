@@ -1,0 +1,263 @@
+.m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  html, main {
+    height: 100%;
+    margin: 0;
+  }
+  
+  header {
+    padding: 0.25rem;
+    background-color: beige;
+  }
+
+  h1 {
+  text-align: center;
+  margin-top: 1rem;
+  }
+
+  h2 {
+    background-color: rgb(223, 222, 197);
+  }
+
+  h3 {
+    font-size: xx-large;
+    text-align: center;
+    margin: 50px;
+  }
+
+.wrapped img {
+  margin-top: 10px;
+  width:100%;
+}
+
+.gallery img {
+  display: flex;
+  text-align: center;
+  margin:0 auto;
+  width:100%;
+}
+
+.gallery img:hover {
+  box-shadow: 0px 0px 10px rgb(97, 97, 25);
+}
+
+.gallery figcaption {
+font-size:xx-large;
+font-weight:bold;
+padding: 0px 0px 40px 0px;
+text-align: center;
+}
+
+.myform fieldset {
+  margin: 10px 10px 20px 10px;
+  text-align: left;
+}
+
+.myform label {
+  text-align: left;
+}
+.myform :required {
+  background-color: beige;
+}
+
+.myform textarea {
+  height: 6rem;
+}
+
+.myform [type=submit] {
+  background-color:beige;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  margin: 10px 10px 10px 10px;
+}
+
+main img:hover {
+  box-shadow: 0px 0px 10px rgb(97, 97, 25);
+  padding: 50px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 1rem 2vw; 
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+}
+
+main img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe {
+ display: flex;
+  width:100%;
+  margin: auto;
+}
+
+  nav ul {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+
+nav a {
+  margin-right: 50px; /* Adjust the value as needed */
+  text-decoration: none;
+  color:black;
+
+  }
+
+
+  nav a:hover {
+    color: rgb(97, 97, 25);
+  }
+
+  h2, p {
+    padding: 10px;
+    text-align:center;
+  }
+  
+  main p {
+    padding: 0px 90px 20px 90px;
+  }
+  
+
+  footer {
+    background-color: rgb(223, 222, 197);
+    text-align: center;
+    color: black;
+    padding: 1px;
+    font-size: .8rem;
+    margin: 315px 0px 100px
+  }
+
+  /* SMALL screens */
+@media only screen and (max-width: 700px) {
+
+  header {
+    text-align: center;
+    color: #000000;
+    background-color: beige;
+  }
+
+ /* nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+  }*/
+
+  nav ul {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
+  
+  /* Make each LI grow equally */
+  nav li {
+  flex: 1 0 15px; /* All items will try to be 150px wide */
+  max-width: 150px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: stretch;
+  }
+  
+  /* Style the links */
+  nav a {
+  flex: 1;
+  display: block;
+  height: 95%;
+  width: 100px;
+  padding: 10px 10px; /* Inner spacing */
+  background-image: linear-gradient(to bottom, beige, rgb(223, 222, 197));
+  color: black;
+  text-decoration: none;
+  }
+  
+  /* Hover effect */
+  nav a:hover {
+    color: rgb(97, 97, 25);
+  }
+
+  main p {
+    text-align:center;
+  }
+
+  main img:hover {
+    box-shadow: 0px 0px 10px rgb(97, 97, 25);
+    padding: 50px;
+  }
+  
+  main img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    height: auto;
+    object-fit: cover;
+   image-rendering: crisp-edges;
+  }
+
+  iframe {
+    display: block;
+     width:100%;
+     margin: auto;
+     height: 100%;
+     object-fit: cover;
+    image-rendering: crisp-edges;
+   }
+
+   .myform fieldset{
+   text-align: left;
+   display: auto;
+   align-items:last baseline;
+   color: rgb(1, 8, 8);
+  }
+
+  .myform label {
+    display: flex;
+    width: 100px; /* Adjust width as needed */
+    text-align: left;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+    flex-direction: column;  /* Stack the items vertically */
+    align-items: center;     /* Center the items */
+  }
+
+  .wrapped img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+   image-rendering: crisp-edges;
+  }
+
+  footer {
+    background-color: rgb(223, 222, 197);
+    text-align: center;
+    color: black;
+    padding: 1px;
+    font-size: .8rem;
+    margin-top: 100px;
+  }
+}
